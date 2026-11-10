@@ -1,0 +1,50 @@
+<svg viewBox="0 0 840 330" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#e0a526"/></marker>
+<marker id="arrow-g" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#0d6e66"/></marker>
+</defs>
+<rect x="0" y="0" width="840" height="330" fill="#f3f5f1"/>
+<rect x="10" y="12" width="260" height="260" rx="16" fill="#ffffff" stroke="#d5ddd9" stroke-width="2"/><circle cx="32" cy="34" r="14" fill="#0d6e66"/><text x="32" y="40" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Arial,sans-serif">1</text><text x="140.0" y="300" font-size="16" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">פותחים את הגומייה מעל הכוס</text>
+<line x1="94.9" y1="90.6" x2="38.5" y2="92.4" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="38.5" cy="92.4" r="12" fill="#18302e"/>
+<line x1="38.5" y1="92.4" x2="25.4" y2="87.6" stroke="#e0a526" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="94.9" y1="123.4" x2="38.5" y2="141.6" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="38.5" cy="141.6" r="12" fill="#18302e"/>
+<line x1="38.5" y1="141.6" x2="25.4" y2="146.4" stroke="#e0a526" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="185.1" y1="123.4" x2="241.5" y2="141.6" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="241.5" cy="141.6" r="12" fill="#18302e"/>
+<line x1="241.5" y1="141.6" x2="254.6" y2="146.4" stroke="#e0a526" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="185.1" y1="90.6" x2="241.5" y2="92.4" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="241.5" cy="92.4" r="12" fill="#18302e"/>
+<line x1="241.5" y1="92.4" x2="254.6" y2="87.6" stroke="#e0a526" stroke-width="3" marker-end="url(#arrow)"/>
+<ellipse cx="140.0" cy="107.0" rx="48" ry="17" fill="none" stroke="#c8483b" stroke-width="6"/>
+<path d="M 105.0 182.0 L 175.0 182.0 L 165.0 238.0 L 115.0 238.0 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="140.0" cy="182.0" rx="35.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="140.0" y="216.7" font-size="30" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">א</text>
+<line x1="140.0" y1="127.0" x2="140.0" y2="178.0" stroke="#0d6e66" stroke-width="3" stroke-dasharray="4 4" marker-end="url(#arrow-g)"/>
+<text x="140.0" y="57.0" font-size="14" fill="#5d6f6c" text-anchor="middle">מושכים החוצה = הגומייה נפתחת</text>
+<rect x="285" y="12" width="260" height="260" rx="16" fill="#ffffff" stroke="#d5ddd9" stroke-width="2"/><circle cx="307" cy="34" r="14" fill="#0d6e66"/><text x="307" y="40" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Arial,sans-serif">2</text><text x="415.0" y="300" font-size="16" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">משחררים קצת, תופסים ומרימים</text>
+<line x1="415.0" y1="162.0" x2="340.0" y2="84.0" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="340.0" cy="84.0" r="12" fill="#18302e"/>
+<line x1="340.0" y1="74.0" x2="340.0" y2="60.0" stroke="#0d6e66" stroke-width="3" marker-end="url(#arrow-g)"/>
+<line x1="415.0" y1="162.0" x2="389.0" y2="84.0" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="389.0" cy="84.0" r="12" fill="#18302e"/>
+<line x1="389.0" y1="74.0" x2="389.0" y2="60.0" stroke="#0d6e66" stroke-width="3" marker-end="url(#arrow-g)"/>
+<line x1="415.0" y1="162.0" x2="441.0" y2="84.0" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="441.0" cy="84.0" r="12" fill="#18302e"/>
+<line x1="441.0" y1="74.0" x2="441.0" y2="60.0" stroke="#0d6e66" stroke-width="3" marker-end="url(#arrow-g)"/>
+<line x1="415.0" y1="162.0" x2="490.0" y2="84.0" stroke="#5d6f6c" stroke-width="2.5"/>
+<circle cx="490.0" cy="84.0" r="12" fill="#18302e"/>
+<line x1="490.0" y1="74.0" x2="490.0" y2="60.0" stroke="#0d6e66" stroke-width="3" marker-end="url(#arrow-g)"/>
+<path d="M 382.0 162.0 L 448.0 162.0 L 439.0 214.0 L 391.0 214.0 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="415.0" cy="162.0" rx="33.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="415.0" y="194.2" font-size="30" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">א</text>
+<ellipse cx="415.0" cy="162.0" rx="30" ry="10" fill="none" stroke="#c8483b" stroke-width="6"/>
+<line x1="391.0" y1="228.0" x2="391.0" y2="240.0" stroke="#d5ddd9" stroke-width="3"/>
+<line x1="407.0" y1="228.0" x2="407.0" y2="240.0" stroke="#d5ddd9" stroke-width="3"/>
+<line x1="423.0" y1="228.0" x2="423.0" y2="240.0" stroke="#d5ddd9" stroke-width="3"/>
+<line x1="439.0" y1="228.0" x2="439.0" y2="240.0" stroke="#d5ddd9" stroke-width="3"/>
+<text x="415.0" y="57.0" font-size="14" fill="#5d6f6c" text-anchor="middle">הגומייה נסגרת על שולי הכוס ומרימה אותה</text>
+<rect x="560" y="12" width="260" height="260" rx="16" fill="#ffffff" stroke="#d5ddd9" stroke-width="2"/><circle cx="582" cy="34" r="14" fill="#0d6e66"/><text x="582" y="40" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Arial,sans-serif">3</text><text x="690.0" y="300" font-size="16" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">המגדל מאיית מילה מהשיעור</text>
+<path d="M 663.0 188.9 L 717.0 188.9 L 729.0 234.9 L 651.0 234.9 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="690.0" cy="188.9" rx="27.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="690.0" y="217.4" font-size="24" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">ם</text>
+<path d="M 661.0 155.8 L 719.0 155.8 L 731.0 201.8 L 649.0 201.8 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="690.0" cy="155.8" rx="29.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="690.0" y="184.3" font-size="24" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">ו</text>
+<path d="M 659.0 122.6 L 721.0 122.6 L 733.0 168.6 L 647.0 168.6 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="690.0" cy="122.6" rx="31.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="690.0" y="151.2" font-size="24" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">ל</text>
+<path d="M 657.0 89.5 L 723.0 89.5 L 735.0 135.5 L 645.0 135.5 Z" fill="#eef3f1" stroke="#9fb0ac" stroke-width="2.5"/><ellipse cx="690.0" cy="89.5" rx="33.0" ry="5" fill="none" stroke="#9fb0ac" stroke-width="2"/><text x="690.0" y="118.0" font-size="24" font-weight="700" fill="#18302e" text-anchor="middle" font-family="Arial,sans-serif">ש</text>
+<text x="690.0" y="57.0" font-size="14" fill="#5d6f6c" text-anchor="middle">לדוגמה: שלום (קוראים מלמעלה למטה)</text>
+</svg>
