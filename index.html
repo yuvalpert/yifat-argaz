@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ארגז המערכים של יפעת</title>
+<style>
+:root{--paper:#f3f5f1;--card:#fff;--ink:#18302e;--muted:#5d6f6c;--line:#d5ddd9;--accent:#0d6e66;--soft:#dcefeb}
+@media (prefers-color-scheme:dark){:root{--paper:#121a19;--card:#1b2624;--ink:#e7efec;--muted:#9db0ac;--line:#2e3d3a;--accent:#4fb8ad;--soft:#1f3936;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 "Assistant","Segoe UI",Arial,sans-serif;padding:0 16px 60px}
+.wrap{max-width:720px;margin:0 auto}
+header{position:sticky;top:0;background:var(--paper);padding:12px 0 10px;border-bottom:1px solid var(--line);margin-bottom:14px;z-index:5}
+h1{font-size:22px;margin:0;line-height:1.2}
+header small{display:block;font-size:13px;color:var(--muted);font-weight:600}
+#q{margin-top:10px;width:100%;font:inherit;font-size:16px;padding:10px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink)}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{display:flex;flex-direction:column;gap:6px;text-align:right;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px;min-height:110px;position:relative}
+.tile b{font-size:18px;line-height:1.2}
+.tile span{font-size:14px;color:var(--muted);line-height:1.35}
+.tile i{position:absolute;top:10px;left:12px;font-style:normal;font-size:13px;color:var(--muted)}
+.back{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:15px}
+.sechead{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.sechead h2{font-size:23px;margin:0;flex:1;line-height:1.15}
+.hint{color:var(--muted);font-size:15px;margin:0 0 12px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:6px}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:14px;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.row{background:var(--card);border:1.5px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.rowhead{display:block;width:100%;border:0;background:none;text-align:right;padding:12px}
+.rowhead b{display:block;font-size:17px;line-height:1.3}
+.rowhead span.n{display:block;font-size:15px;color:var(--muted);margin-top:2px}
+.tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--accent);background:var(--soft);border-radius:6px;padding:1px 7px;margin:5px 0 0 4px}
+.body{border-top:1px dashed var(--line);padding:10px 12px 12px}
+.body ol{margin:0 0 8px;padding-inline-start:22px}
+.body li{margin-bottom:4px}
+.body img{display:block;width:100%;height:auto;border:1.5px solid var(--line);border-radius:12px;margin-bottom:10px}
+.note{font-size:15px;color:var(--muted);margin:0 0 8px;white-space:pre-wrap}
+.grp{margin:14px 0 6px;font-size:17px}
+.empty,.foot{color:var(--muted);text-align:center;padding:20px 8px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>ארגז המערכים של יפעת<small>מרכז יפעת · עותק לצפייה · עודכן 10.11.2026</small></h1>
+<input id="q" type="search" placeholder="חיפוש בכל הארגז: נושא, משחק, דמות…" aria-label="חיפוש">
+</header>
+<main id="view"></main>
+<p class="foot">זהו עותק לצפייה בלבד. הערות ושינויים מעבירים לצוות המרכז.</p>
+</div>
+<script src="plans1.js"></script>
+<script src="plans2.js"></script>
+<script src="items1.js"></script>
+<script src="items2.js"></script>
+<script src="items3.js"></script>
+<script>
+(function(){
+'use strict';
+var S=[
+['plans','מאגר מערכים','כל המערכים מהדרייב, חיפוש לפי נושא ושכבה'],
+['floor','משחקי רצפה שבנינו','המשחקים הענקיים שלנו והכללים שלהם'],
+['newgames','משחקי ענק חדשים','משחקים גנריים בהשראת משחקי קופסה מוכרים'],
+['odt','ODT בתוך הכיתה','אתגרי קבוצה בלי לצאת לחצר'],
+['story','דרכים לספר סיפור','מה עבד אצלנו, ורעיונות נוספים'],
+['storyopen','פתיחות לסיפור','משפט ראשון שתופס את הכיתה'],
+['lessonopen','פתיחות למערך','חמש הדקות הראשונות'],
+['songs','משימות שמיעה לשירים','מה עשינו עם שירים במערכים, ורעיונות חדשים']
+];
+var G={'א-ג':'א׳–ג׳','ד-ו':'ד׳–ו׳','א-ו':'א׳–ו׳'};
+var items=(window.I||[]).map(function(r,i){return {id:'i'+i,sec:r[0],title:r[1],tags:r[2]?[r[2]]:[],steps:r[3]||[],note:r[4]||'',src:r[5]||'',img:r[6]||''}});
+(window.P||[]).forEach(function(r,i){
+  var tags=[window.T[r[1]],G[r[2]]||r[2],r[3]];if(r[4])tags.push(r[4]);
+  items.push({id:'p'+i,sec:'plans',title:r[0],tags:tags,steps:[],note:'',img:'',topic:window.T[r[1]],grade:r[2],
+    src:r[5]?'https://docs.google.com/document/d/'+r[6]+'/edit':'https://drive.google.com/file/d/'+r[6]+'/view'});
+});
+var view=document.getElementById('view'),q=document.getElementById('q');
+var route='home',openId=null,ft='',fg='';
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+function of(sec){return items.filter(function(x){return x.sec===sec})}
+function row(it){
+  var r=el('article','row'),h=el('button','rowhead');h.type='button';
+  h.setAttribute('aria-expanded',openId===it.id);
+  h.appendChild(el('b','',it.title));
+  if(it.steps[0])h.appendChild(el('span','n',it.steps[0]));
+  it.tags.forEach(function(t){h.appendChild(el('span','tag',t))});
+  h.onclick=function(){openId=openId===it.id?null:it.id;render()};
+  r.appendChild(h);
+  if(openId===it.id){
+    var b=el('div','body');
+    if(it.img){var im=el('img');im.src=it.img;im.alt='תרשים הסבר: '+it.title;b.appendChild(im)}
+    if(it.steps.length){var ol=el('ol');it.steps.forEach(function(s){ol.appendChild(el('li','',s))});b.appendChild(ol)}
+    if(it.note)b.appendChild(el('p','note',it.note));
+    if(it.src){var a=el('a','','פתיחה בדרייב ↗');a.href=it.src;a.target='_blank';a.rel='noopener';b.appendChild(a)}
+    if(!b.firstChild)b.appendChild(el('p','note','אין פירוט נוסף.'));
+    r.appendChild(b);
+  }
+  return r;
+}
+function chips(list,cur,set){
+  var c=el('div','chips');
+  list.forEach(function(p){var b=el('button','chip',p[1]);b.type='button';b.setAttribute('aria-pressed',cur===p[0]);b.onclick=function(){set(p[0]);render()};c.appendChild(b)});
+  return c;
+}
+function render(){
+  var term=q.value.trim().toLowerCase();view.innerHTML='';
+  if(term){
+    var total=0;
+    S.forEach(function(s){
+      var hits=of(s[0]).filter(function(x){return [x.title,x.tags.join(' '),x.note,x.steps.join(' ')].join(' ').toLowerCase().indexOf(term)>=0});
+      if(!hits.length)return;total+=hits.length;
+      view.appendChild(el('h2','grp',s[1]+' · '+hits.length));
+      hits.slice(0,40).forEach(function(it){view.appendChild(row(it))});
+    });
+    if(!total)view.appendChild(el('p','empty','לא נמצא דבר. אפשר לנסות מילה אחרת.'));
+    return;
+  }
+  if(route==='home'){
+    var bd=el('div','board');
+    S.forEach(function(s){var t=el('button','tile');t.type='button';t.appendChild(el('b','',s[1]));t.appendChild(el('span','',s[2]));t.appendChild(el('i','',of(s[0]).length));t.onclick=function(){location.hash=s[0]};bd.appendChild(t)});
+    view.appendChild(bd);return;
+  }
+  var s=S.filter(function(x){return x[0]===route})[0];
+  var hd=el('div','sechead'),bk=el('button','back','→ ראשי');bk.type='button';bk.onclick=function(){location.hash=''};
+  hd.appendChild(bk);hd.appendChild(el('h2','',s[1]));view.appendChild(hd);
+  view.appendChild(el('p','hint',s[2]));
+  var list=of(route);
+  if(route==='plans'){
+    view.appendChild(chips([['','כל הנושאים']].concat(window.T.map(function(t){return [t,t]})),ft,function(v){ft=v}));
+    view.appendChild(chips([['','כל השכבות'],['א-ג','א׳–ג׳'],['ד-ו','ד׳–ו׳'],['א-ו','לכל השכבות']],fg,function(v){fg=v}));
+    list=list.filter(function(x){return (!ft||x.topic===ft)&&(!fg||x.grade===fg)});
+    view.appendChild(el('p','hint',list.length+' מערכים · פתיחת קובץ דורשת הרשאה לדרייב של המרכז'));
+  }
+  if(!list.length)view.appendChild(el('p','empty','אין כאן פריטים.'));
+  list.forEach(function(it){view.appendChild(row(it))});
+}
+function onHash(){var r=(location.hash||'').slice(1);route=S.some(function(x){return x[0]===r})?r:'home';openId=null;render();window.scrollTo(0,0)}
+window.addEventListener('hashchange',onHash);
+q.addEventListener('input',render);
+onHash();
+})();
+</script>
+</body>
+</html>
